@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="Title_Bar_Color_Change.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Title_Bar_Color_Change"
+    RequestedTheme="Light">
+
+</Application>
