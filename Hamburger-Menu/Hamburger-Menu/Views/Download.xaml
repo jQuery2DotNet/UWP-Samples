@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Hamburger_Menu.Views.Download"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hamburger_Menu.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Viewbox MaxHeight="100"
+                     MaxWidth="100">
+                <SymbolIcon Symbol="Download" />
+            </Viewbox>
+            <TextBlock TextAlignment="Center"
+                       Text="Download"
+                       Margin="0,15,0,0" />
+        </StackPanel>
+    </Grid>
+</Page>

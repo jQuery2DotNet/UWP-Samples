@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hamburger-Menu", "Hamburger-Menu\Hamburger-Menu.csproj", "{552772A1-335A-4200-831F-BD565F47F0A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Debug|ARM.ActiveCfg = Debug|ARM
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Debug|ARM.Build.0 = Debug|ARM
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Debug|ARM.Deploy.0 = Debug|ARM
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Debug|x64.ActiveCfg = Debug|x64
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Debug|x64.Build.0 = Debug|x64
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Debug|x64.Deploy.0 = Debug|x64
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Debug|x86.ActiveCfg = Debug|x86
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Debug|x86.Build.0 = Debug|x86
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Debug|x86.Deploy.0 = Debug|x86
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Release|ARM.ActiveCfg = Release|ARM
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Release|ARM.Build.0 = Release|ARM
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Release|ARM.Deploy.0 = Release|ARM
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Release|x64.ActiveCfg = Release|x64
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Release|x64.Build.0 = Release|x64
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Release|x64.Deploy.0 = Release|x64
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Release|x86.ActiveCfg = Release|x86
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Release|x86.Build.0 = Release|x86
+		{552772A1-335A-4200-831F-BD565F47F0A2}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
