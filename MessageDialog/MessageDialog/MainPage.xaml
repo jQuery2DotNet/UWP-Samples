@@ -1,0 +1,48 @@
+﻿<Page x:Class="MessageDialog.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:MessageDialog"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      x:Name="mainPage"
+      mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Button x:Name="Showbutton"
+                    Click="Showbutton_Click"
+                    Content="Show Message Dialog without title"
+                    Margin="0,5" />
+            <Button Content="Show Message Dialog With 3 Buttons"
+                    Click="ButtonShowMessageDialog_Click"
+                    Margin="0,5" />
+            <Button Content="Dark Theme Content Dialog"
+                    Click="ButtonShowContentDialog1_Click"
+                    Margin="0,5" />
+            <Button Content="Full Size Desired Content Dialog"
+                    Click="ButtonShowContentDialog2_Click"
+                    Margin="0,5" />
+            <Button Content="Custom XAML Design Content Dialog"
+                    Click="ButtonShowContentDialog3_Click"
+                    Margin="0,5" />
+            <Button Content="Show Authentication Content Dialog"
+                    Click="ButtonShowContentDialog4_Click"
+                    Margin="0,5" />
+        </StackPanel>        <ContentDialog x:Name="MyContentDialog"
+                       VerticalAlignment="Stretch"
+                       Title="Custom XAML Design Content Dialog"
+                       PrimaryButtonText="OK"
+                       IsPrimaryButtonEnabled="{Binding IsChecked, ElementName=checkBoxAgree, Mode=OneWay}"
+                       SecondaryButtonText="Cancel"
+                       MaxWidth="{Binding ActualWidth, ElementName=mainPage}">
+            <StackPanel>
+                <TextBlock Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text."
+                           TextWrapping="Wrap" />
+                <CheckBox x:Name="checkBoxAgree"
+                          Content="Agree" />
+            </StackPanel>
+
+        </ContentDialog>
+    </Grid>
+</Page>
