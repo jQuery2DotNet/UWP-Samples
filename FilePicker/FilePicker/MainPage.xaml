@@ -1,0 +1,50 @@
+﻿<Page x:Class="FilePicker.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:FilePicker"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="0">
+            <Button x:Name="SelectImage"
+                    Tapped="SelectImage_Tapped"
+                    Content="Select Image" />
+            <Button x:Name="SelectMultiImage"
+                    Margin="20,0,0,0"
+                    Tapped="SelectMultiImage_Tapped"
+                    Content="Select Multiple Image" />
+
+            <Button x:Name="SelectTextFile"
+                    Margin="20,0,0,0"
+                    Tapped="SelectTextFile_Tapped"
+                    Content="Select Text File" />
+        </StackPanel>
+
+
+        <Grid  Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="350" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackPanel x:Name="ImagePreview"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Orientation="Horizontal" />
+
+            <ScrollViewer Grid.Row="1">
+                <TextBlock x:Name="FileText" />
+            </ScrollViewer>
+
+        </Grid>
+
+
+    </Grid>
+</Page>

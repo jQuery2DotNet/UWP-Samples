@@ -1,0 +1,41 @@
+﻿<Page x:Class="PDFViewer.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:PDFViewer"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical">
+            <Button Content="Open Local PDF"
+                    MinWidth="150"
+                    x:Name="LocalPDF"
+                    Tapped="LocalPDF_Tapped" />
+            <Button Content="Open Remote PDF"
+                    MinWidth="150"
+                    x:Name="RemotePDF"
+                    Tapped="RemotePDF_Tapped" />
+        </StackPanel>
+
+
+        <ScrollViewer ZoomMode="Enabled"
+                      HorizontalContentAlignment="Stretch"
+                      VerticalContentAlignment="Stretch"
+                      Background="DarkGray"
+                      Grid.Column="1">
+            <ItemsControl ItemsSource="{Binding PdfPages,Mode=TwoWay}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding}"
+                               Margin="0 2" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Page>
