@@ -1,4 +1,4 @@
-#How to add Page Indicator to FlipView
+#How to add Page Indicator with FlipView UWP
 
 Basic FlipView
 ```
